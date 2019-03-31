@@ -43,3 +43,7 @@ document.onkeyup = function(event) {
         guessesLeftText.textContent = "Guesses Left: " + guesses;
     }
 }
+// The one problem I had was turning the your guesses into a string so the player can see all the options they
+// already tried. I could have sworn we have down something similiar to this in class but I failed to find it
+// in Javascript form(found something similar in Jquery). I tried pushing the values into an empty array, that 
+// only led to the array counting by one for some strange reason. 
