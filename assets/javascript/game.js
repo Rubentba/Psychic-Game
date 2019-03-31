@@ -35,7 +35,7 @@ document.onkeyup = function(event) {
         directionsText.textContent = "";
 
         // Displays game "UI" after directions are hidden
-        blurbText.textContent = "Guess what number I am thinking of";
+        blurbText.textContent = "Guess what number I am thinking of...";
         guessesText.textContent = "Your Guesses so far: " + userGuess;
         winsText.textContent = "wins: " + wins;
         lossesText.textContent = "losses: " + losses;
