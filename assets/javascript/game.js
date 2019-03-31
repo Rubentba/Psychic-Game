@@ -1,5 +1,6 @@
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "k", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z"];
-var guessesLeft = [""]
+// im sure i didnt need to use var again until document.onkeyup but i did it this way for clairty. Kept the variables that
+// had something in common outside of being variables grouped together.
 
 var wins = 0,
     losses = 0,
@@ -19,7 +20,7 @@ document.onkeyup = function(event) {
     // Computer randomly chooses a choice from the options array.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // This determines who wins/loss and guesses left
+    // This determines who wins/loss and guesses left.
     if (userGuess) {
 
         if (userGuess === computerGuess) { 
@@ -34,7 +35,7 @@ document.onkeyup = function(event) {
         // Hide the directions
         directionsText.textContent = "";
 
-        // Displays game "UI" after directions are hidden
+        // Displays game "UI" after directions are hidden.
         blurbText.textContent = "Guess what number I am thinking of...";
         guessesText.textContent = "Your Guesses so far: " + userGuess;
         winsText.textContent = "wins: " + wins;
